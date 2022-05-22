@@ -7,8 +7,7 @@ class CreateAccountController {
         const { 
             name,
             email,
-            cpf,
-            password 
+            cpf
         } = request.body;
 
         const createAccountUseCase = container.resolve(CreateAccountUseCase);
@@ -16,8 +15,7 @@ class CreateAccountController {
         const newAccount = await createAccountUseCase.execute({
             name,
             email,
-            cpf,
-            password 
+            cpf
         })
 
         return response.status(201).json(newAccount);
