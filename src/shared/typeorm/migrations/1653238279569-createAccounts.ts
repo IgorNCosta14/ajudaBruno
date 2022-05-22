@@ -8,8 +8,11 @@ export class createAccounts1653238279569 implements MigrationInterface {
         columns: [
           {
             name: "account",
-            type: "numeric",
+            type: "int",
             isPrimary: true,
+            generationStrategy: 'identity',
+            generatedIdentity: 'ALWAYS',
+            isGenerated: true,
           },
           {
             name: "name",

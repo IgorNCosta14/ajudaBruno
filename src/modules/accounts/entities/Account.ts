@@ -1,8 +1,8 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, PrimaryColumn} from "typeorm";
 
 @Entity("accounts")
 class Account {
-    @PrimaryGeneratedColumn('increment')
+    @PrimaryColumn()
     account?: number;
 
     @Column()
