@@ -14,9 +14,6 @@ class Account {
     @Column()
     cpf: string;
 
-    @Column()
-    password: string;
-
     @CreateDateColumn()
     created_at?: Date;
 }

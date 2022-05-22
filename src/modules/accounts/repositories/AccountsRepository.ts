@@ -11,19 +11,17 @@ class AccountsRepository implements IAccountsRepository {
   }
   
   async create({
-    account,
+    id,
     name,
     email,
     cpf,
-    password,
     created_at,
   }: ICreateAccountDTO): Promise<Account> {
     const userAccount = this.repository.create({
-      account,
+      id,
       name,
       email,
       cpf,
-      password,
       created_at,
     });
 
