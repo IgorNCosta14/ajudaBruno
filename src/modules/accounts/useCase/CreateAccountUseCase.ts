@@ -13,14 +13,12 @@ class CreateAccountUseCase {
     async execute({
         name,
         email,
-        cpf,
-        password
+        cpf
     }:ICreateAccountDTO): Promise<Account> {
         const newAccount = this.accountsRepository.create({
             name,
             email,
-            cpf,
-            password
+            cpf
         })
 
         return newAccount

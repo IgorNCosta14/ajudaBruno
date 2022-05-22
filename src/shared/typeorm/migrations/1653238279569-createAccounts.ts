@@ -4,10 +4,10 @@ export class createAccounts1653238279569 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
-        name: "accounts",
+        name: "account",
         columns: [
           {
-            name: "account",
+            name: "id",
             type: "int",
             isPrimary: true,
             generationStrategy: 'identity',
@@ -17,18 +17,17 @@ export class createAccounts1653238279569 implements MigrationInterface {
           {
             name: "name",
             type: "varchar",
+            isUnique: false,
           },
           {
             name: "email",
             type: "varchar",
+            isUnique: false,
           },
           {
             name: "cpf",
             type: "varchar",
-          },
-          {
-            name: "password",
-            type: "varchar",
+            isUnique: false,
           },
           {
             name: "created_at",

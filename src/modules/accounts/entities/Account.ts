@@ -1,9 +1,9 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn} from "typeorm";
 
-@Entity("accounts")
+@Entity("account")
 class Account {
     @PrimaryColumn()
-    account?: number;
+    id?: number;
 
     @Column()
     name: string;

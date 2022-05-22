@@ -18,6 +18,7 @@ export class accountBalance1653242794061 implements MigrationInterface {
           {
             name: "balance",
             type: "numeric",
+            isUnique: false,
           },
           {
             name: "created_at",
