@@ -5,7 +5,6 @@ interface ICreateAccountDTO {
     name: string;
     email: string;
     cpf: string;
-    statement?: Statement[];
     created_at?: Date;
     updated_at?: Date;
 }

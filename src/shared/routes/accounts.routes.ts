@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { CreateAccountController } from "../../modules/accounts/useCase/CreateAccountController";
+import { CreateAccountController } from "../../modules/accounts/useCase/CreateAccount/CreateAccountController";
 
 const accountsRoutes = Router();
 

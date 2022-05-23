@@ -1,7 +1,7 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn} from "typeorm";
 import { Account } from "./Account";
 
-@Entity("account")
+@Entity("account_balance")
 export class AccountBalance {
     @PrimaryColumn()
     public readonly id?: number;

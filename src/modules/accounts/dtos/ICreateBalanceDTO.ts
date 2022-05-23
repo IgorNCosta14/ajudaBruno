@@ -1,5 +1,5 @@
 export interface ICreateBalanceDTO {
-    id: number;
+    id?: number;
     account_id: number;
     balance: number;
     created_at?: Date;
