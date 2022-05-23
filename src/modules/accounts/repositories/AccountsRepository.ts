@@ -16,6 +16,7 @@ class AccountsRepository implements IAccountsRepository {
     email,
     cpf,
     created_at,
+    updated_at
   }: ICreateAccountDTO): Promise<Account> {
     const userAccount = this.repository.create({
       id,
@@ -23,6 +24,7 @@ class AccountsRepository implements IAccountsRepository {
       email,
       cpf,
       created_at,
+      updated_at
     });
 
     await this.repository.save(userAccount);

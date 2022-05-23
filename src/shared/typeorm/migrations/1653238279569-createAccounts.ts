@@ -34,6 +34,11 @@ export class createAccounts1653238279569 implements MigrationInterface {
             type: "timestamp",
             default: "now()",
           },
+          {
+            name: "updated_at",
+            type: "timestamp",
+            default: "now()",
+          },
         ],
       })
     );

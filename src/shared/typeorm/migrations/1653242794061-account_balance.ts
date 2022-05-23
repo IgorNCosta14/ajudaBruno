@@ -8,8 +8,11 @@ export class accountBalance1653242794061 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "numeric",
+            type: "int",
             isPrimary: true,
+            generationStrategy: 'identity',
+            generatedIdentity: 'ALWAYS',
+            isGenerated: true,
           },
           {
             name: "account_id",
@@ -18,7 +21,6 @@ export class accountBalance1653242794061 implements MigrationInterface {
           {
             name: "balance",
             type: "numeric",
-            isUnique: false,
           },
           {
             name: "created_at",

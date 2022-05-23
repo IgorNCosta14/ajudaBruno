@@ -1,21 +1,22 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn} from "typeorm";
 
 @Entity("account")
-class Account {
+export class Account {
     @PrimaryColumn()
-    id?: number;
+    public readonly id?: number;
 
-    @Column()
-    name: string;
+    @Column({ nullable: false, unique: false })
+    public name: string;
 
-    @Column()
-    email: string;
+    @Column({ nullable: false, unique: false })
+    public email: string;
 
-    @Column()
-    cpf: string;
+    @Column({ nullable: false, unique: false })
+    public cpf: string;
 
     @CreateDateColumn()
-    created_at?: Date;
-}
+    public created_at?: Date;
 
-export { Account }
+    @CreateDateColumn()
+    public updated_at?: Date;
+}

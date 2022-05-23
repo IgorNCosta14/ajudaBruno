@@ -7,6 +7,7 @@ interface ICreateAccountDTO {
     cpf: string;
     statement?: Statement[];
     created_at?: Date;
+    updated_at?: Date;
 }
 
 export { ICreateAccountDTO }
