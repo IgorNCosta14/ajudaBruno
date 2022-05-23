@@ -13,7 +13,7 @@ export class accountBalance1653242794061 implements MigrationInterface {
           },
           {
             name: "account_id",
-            type: "numeric",
+            type: "int",
           },
           {
             name: "balance",
